@@ -1,0 +1,22 @@
+1.First each array element has 2 integer variabels,2 char arrays of size 20 and a float,
+  Therefor each elements has a memory of
+             =4+4+20+20+4
+             =52 Bytes.
+ we consider that the array has 1000 elements,
+Therefor memory allocated for my array=52Bytes*1000
+                                      =52 Kbytes.
+
+2.I have defined the array outside of the  main function so its a global variable,therefor its lifetime is the full duration of the programme
+  that means memory is allocated at the start and its freed when the programme ends.
+
+3.  Since we store values in a array by deleting a record we just mean removing that specific element where the required registration number is 
+ sotred and then moving the elements which were after the element one index to the right.
+   yes we have to do additional processing,first if we add a new student after deleting a record it will place the new student without considering 
+the deleted element therefor we have to delete the no of elements deleted to add students in proper order of the array.
+  And also when printing all students if a record is deletd we need to input it there so that the no of times the loop prints the array is reduced.
+
+4.No,Because we have to define a size to for our array or there will be a compilation error.
+
+5.Basically resizing an array means changing the memory allocated to it so we can change it using the malloc function.
+ 
+ 
